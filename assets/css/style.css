@@ -52,18 +52,17 @@ button:hover{
   }
 
 .container {
-  z-index:10;
+    z-index:10;
     display:flex;
     justify-content: center;
     align-items:center;
     margin: 1em;
-    flex-wrap:wrap;
     padding: 2em 2em 0 2em;
 }
 h1 {
     font-family:'Kallem', sans-serif;
     align-self: center;
-    font-size:3em;
+    font-size: 2em;
     margin: 1em;
 }
 .epic {
@@ -94,14 +93,15 @@ h1 {
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
+    font-size: 1em;
   }
 
 .flex-container h2 {
-  letter-spacing: 2px;;
+  letter-spacing: 2px;
 }
 
 /* Footer */
-#footer {
+ #footer {
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -114,11 +114,7 @@ h1 {
     margin-top:2em;
 }
 
-#footer > ul > li {
-	margin-right: .5em;
-}
-
-#footer .heart{
+footer .heart{
   color: rgb(228, 155, 167);
   margin: 0 .25em; 
 }
@@ -151,18 +147,25 @@ font-family: 'Sono', serif;
   }
 
   /* Media Queries */
+@media (max-width: 520px){
+  .hand, .hand-two {
+    font-size: 4em;
+}
 
-  @media (max-width:540px){
-    .hand, .hand-two {
-        font-size: 3.5em;
-    }
-    h1 {
-        font-size: 2.5em;
-    }
   }
+
+
+  /* }
+  .container span img {
+      min-width: 30%;
+      max-width: 40%;
+  }
+} */
+
   @media screen and (prefers-reduced-motion: reduce) {
     .animate { animation: none !important; }
   }
+
 
   /* Keyframes */
   @keyframes handShake {
@@ -178,9 +181,10 @@ font-family: 'Sono', serif;
   }
 
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	20%{transform: translateY(0);}
 	40% {transform: translateY(25px);}
-	60% {transform: translateY(30px);}
+	50% {transform: translateY(30px);}
+  6%{transform: translateY(35px);}
  }
 
 
