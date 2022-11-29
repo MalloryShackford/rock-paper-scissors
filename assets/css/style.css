@@ -114,7 +114,11 @@ h1 {
     margin-top:2em;
 }
 
-footer .heart{
+#footer > ul > li {
+	margin-right: .5em;
+}
+
+#footer .heart{
   color: rgb(228, 155, 167);
   margin: 0 .25em; 
 }
