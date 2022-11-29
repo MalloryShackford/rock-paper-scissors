@@ -101,25 +101,17 @@ h1 {
 }
 
 /* Footer */
-footer {
-  display:block;
-  width:100%;
-  text-align:center;
-}
-
-footer .social li{
-display:inline-flex; 
-justify-content:center;
-flex-direction:row;
-margin: .5em;
-padding: 5em .5em .75em 0em;
-}
-
-footer .copy li {
-  display: flex;
-  justify-content: center;
-  margin: .75em .5em .75em 0;
-  text-align: center;
+#footer {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2em 0;
+ }
+#footer > ul {
+    position:block;
+    margin-top:2em;
 }
 
 footer .heart{
